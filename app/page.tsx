@@ -32,7 +32,7 @@ export default function Home() {
           情報をお見逃しなく！
         </p>
 
-        <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
           {/* X */}
           <Link href="https://x.com/_ORILINK_">
             <button
@@ -63,8 +63,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/** 各種SNS */}
-      <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+      {/** ページへのリンク */}
+      <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
         <Link href="/past-events">
           <Button>過去のイベント</Button>
         </Link>
