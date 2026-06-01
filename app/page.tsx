@@ -1,65 +1,84 @@
 import Image from "next/image";
-
+import Link from "next/link";
+import Carousel from "@/components/Carousel";
+import Button from "@/components/Button";
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <article>
+      {/** ホームの動く写真 */}
+      <Carousel />
+
+      {/** 団体説明 */}
+      <div className="bg-white p-8 rounded-lg max-w-none mb-3"
+        style={{ borderRadius: "var(--radius-lg)" }}
+      >
+        <h2 className=" mb-3">ORILINKについて</h2>
+        <p>
+          ORILINKは2025年に結成した、大学生が運営する折り紙コミュニティです。
+          全国の折り紙を愛する大学生が交流し、またチームとなって展示会や講習会を開催しています。
+          現在は東京大学折り紙サークルOrist、名古屋大学折り紙サークルNU folders、京都大学折り紙サークルいまじろ～を
+          はじめとした大学折り紙サークルに所属するメンバーが中心となり運営を行っています。
+          新規メンバーも大募集中ですので、ご興味おありの方はぜひご連絡ください！
+        </p>
+      </div>
+
+      {/** 各種SNS */}
+      <div className="bg-white p-8 rounded-lg max-w-none mb-6"
+        style={{ borderRadius: "var(--radius-lg)" }}
+      >
+        <h2 className=" mb-3">各種SNS</h2>
+        <p className="mb-3">
+          X 、 Instagramにて活動を発信しています！
+          情報をお見逃しなく！
+        </p>
+
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+          {/* X */}
+          <Link href="https://x.com/_ORILINK_">
+            <button
+              className="text-white font-bold px-6 py-2 transition-colors"
+              style={{
+                borderRadius: "var(--radius-lg)",
+                fontFamily: "var(--font-serif)",
+                backgroundColor: "#000000",
+              }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              X (Twitter)
+            </button>
+          </Link>
+
+          {/* Instagram */}
+          <Link href="https://www.instagram.com/_orilink_/">
+            <button
+              className="text-white font-bold px-6 py-2 transition-colors"
+              style={{
+                borderRadius: "var(--radius-lg)",
+                fontFamily: "var(--font-serif)",
+                backgroundColor: "#E1306C",
+              }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Instagram
+            </button>
+          </Link>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+
+      {/** 各種SNS */}
+      <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+        <Link href="/past-events">
+          <Button>過去のイベント</Button>
+        </Link>
+
+        <Link href="/next-event">
+          <Button>次回イベント</Button>
+        </Link>
+
+        <Link href="/inquiry">
+          <Button>お問い合わせ</Button>
+        </Link>
+
+      </div>
+
+    </article >
   );
 }
