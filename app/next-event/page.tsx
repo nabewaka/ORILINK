@@ -52,7 +52,7 @@ export default function NextEventPage() {
             </ul>
 
             {/* ボタン */}
-            <Link href="https://docs.google.com/forms/...">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeUO_-ufQk5RTRPvCv5f5oH6M979EFhMNh5-mHXJ1QmhdaGhQ/viewform?usp=publish-editor">
                 <Button>お申し込みはこちら</Button>
             </Link>
         </div>
