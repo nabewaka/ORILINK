@@ -22,7 +22,7 @@ export default function No1Page() {
                     alt="第一回東京展示会ポスター"
                     width={800}
                     height={1200}
-                    className="w-1/3 h-auto"
+                    className="w-2/3 h-auto"
                 />
             </div>
 
