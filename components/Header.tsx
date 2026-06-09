@@ -23,7 +23,7 @@ export default function Header() {
                     <div className="relative h-10 w-55 overflow-hidden bg-white rounded-sm">
                         <Image
                             src="/images/Logo.jpg"
-                            alt="ORILINKロゴ"
+                            alt="ORILINK"
                             fill
                             className="object-cover scale-110"
                         />
