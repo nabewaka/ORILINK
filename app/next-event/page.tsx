@@ -1,11 +1,13 @@
+import Image from "next/image";
 import Button from "@/components/Button";
+import { PhotoGallery } from "@/components/EventImages";
 import Link from "next/link";
 
 export default function NextEventPage() {
     return (
         <div className="bg-white p-8 rounded-lg max-w-none mb-6"
-        style={{ borderRadius: "var(--radius-lg)" }}
-      >
+            style={{ borderRadius: "var(--radius-lg)" }}
+        >
             <h2 className="text-black font-bold mb-4" style={{ fontSize: "var(--text-3xl)" }}>
                 第二回ORILINK京都のご案内
             </h2>
@@ -52,9 +54,30 @@ export default function NextEventPage() {
             </ul>
 
             {/* ボタン */}
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeUO_-ufQk5RTRPvCv5f5oH6M979EFhMNh5-mHXJ1QmhdaGhQ/viewform?usp=publish-editor">
-                <Button>お申し込みはこちら</Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center mt-8">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeUO_-ufQk5RTRPvCv5f5oH6M979EFhMNh5-mHXJ1QmhdaGhQ/viewform?usp=publish-editor">
+                    <Button>お申し込みはこちら</Button>
+                </Link>
+            </div>
+            <h3 className="font-bold mt-12 mb-4" style={{ fontSize: "var(--text-2xl)" }}>
+                講習予定作品
+            </h3>
+            <PhotoGallery
+                images={[
+                    { src: "/images/No2_event/workshop/ピストル_松岡利明.jpg", alt: "ピストル_松岡利明" , caption: "ピストル : 松岡利明" },
+                    { src: "/images/No2_event/workshop/サボテン_眞鍋和奏.jpg", alt: "サボテン_眞鍋和奏" , caption: "サボテン : 眞鍋和奏" },
+                    { src: "/images/No2_event/workshop/クラシックカー_加藤眸.jpg", alt: "クラシックカー_加藤眸" , caption: "クラシックカー : 加藤眸" },
+                    { src: "/images/No2_event/workshop/ミニジンベエザメ_中村遼.jpg", alt: "ミニジンベエザメ_中村遼" , caption: "ミニジンベエザメ : 中村遼" },
+                ]}
+            />
+
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center mt-8">
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeUO_-ufQk5RTRPvCv5f5oH6M979EFhMNh5-mHXJ1QmhdaGhQ/viewform?usp=publish-editor">
+                    <Button>お申し込みはこちら</Button>
+                </Link>
+            </div>
         </div>
+
+
     );
 }

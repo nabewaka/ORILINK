@@ -63,6 +63,14 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="bg-white p-8 rounded-lg max-w-none mb-3"
+        style={{ borderRadius: "var(--radius-lg)" }}
+      >
+        <h2 className=" mb-3">入会希望の方へ</h2>
+        <p>
+          お問い合わせページに詳細を載せています！
+        </p>
+      </div>
       {/** ページへのリンク */}
       <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center items-center">
         <Link href="/past-events">

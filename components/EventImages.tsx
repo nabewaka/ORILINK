@@ -22,18 +22,24 @@ export function SectionImages({ images }: {
 }
 
 // フォトギャラリー
-export function PhotoGallery({ images }: { images: { src: string; alt: string }[] }) {
+export function PhotoGallery({ images }: { 
+    images: { src: string; alt: string; caption?: string }[] 
+}) {
     return (
         <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4 mt-8">
             {images.map((img) => (
-                <Image
-                    key={img.src}
-                    src={img.src}
-                    alt={img.alt}
-                    width={800}
-                    height={600}
-                    className="w-2/3 sm:w-full mx-auto h-auto rounded-lg"
-                />
+                <div key={img.src} className="flex flex-col items-center">
+                    <Image
+                        src={img.src}
+                        alt={img.alt}
+                        width={800}
+                        height={600}
+                        className="w-2/3 sm:w-full mx-auto h-auto rounded-lg"
+                    />
+                    {img.caption && (
+                        <p className="text-sm text-gray-500 mt-1 text-center">{img.caption}</p>
+                    )}
+                </div>
             ))}
         </div>
     );
