@@ -69,6 +69,7 @@ export default function NextEventPage() {
                     { src: "/images/No2_event/workshop/クラシックカー_加藤眸.jpg", alt: "クラシックカー_加藤眸" , caption: "クラシックカー : 加藤眸" },
                     { src: "/images/No2_event/workshop/ミニジンベエザメ_中村遼.jpg", alt: "ミニジンベエザメ_中村遼" , caption: "ミニジンベエザメ : 中村遼" },
                     { src: "/images/No2_event/workshop/かえる_森田太郎.jpg", alt: "かえる_森田太郎" , caption: "かえる : 森田太郎" },
+                    { src: "/images/No2_event/workshop/金魚_林清人.jpg", alt: "金魚_林清人" , caption: "金魚 : 林清人" },
                 ]}
             />
 
