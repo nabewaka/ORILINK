@@ -70,6 +70,8 @@ export default function NextEventPage() {
                     { src: "/images/No2_event/workshop/ミニジンベエザメ_中村遼.jpg", alt: "ミニジンベエザメ_中村遼" , caption: "ミニジンベエザメ : 中村遼" },
                     { src: "/images/No2_event/workshop/かえる_森田太郎.jpg", alt: "かえる_森田太郎" , caption: "かえる : 森田太郎" },
                     { src: "/images/No2_event/workshop/金魚_林清人.jpg", alt: "金魚_林清人" , caption: "金魚 : 林清人" },
+                    { src: "/images/No2_event/workshop/かっぱ_西谷優良.jpg", alt: "かっぱ_西谷優良" , caption: "かっぱ : 西谷優良" },
+                    { src: "/images/No2_event/workshop/プレゼントボックス_篠原隆士朗.jpg", alt: "プレゼントボックス_篠原隆士朗" , caption: "プレゼントボックス : 篠原隆士朗" },
                 ]}
             />
 
