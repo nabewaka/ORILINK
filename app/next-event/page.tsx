@@ -72,6 +72,8 @@ export default function NextEventPage() {
                     { src: "/images/No2_event/workshop/金魚_林清人.jpg", alt: "金魚_林清人" , caption: "金魚 : 林清人" },
                     { src: "/images/No2_event/workshop/かっぱ_西谷優良.jpg", alt: "かっぱ_西谷優良" , caption: "かっぱ : 西谷優良" },
                     { src: "/images/No2_event/workshop/プレゼントボックス_篠原隆士朗.jpg", alt: "プレゼントボックス_篠原隆士朗" , caption: "プレゼントボックス : 篠原隆士朗" },
+                    { src: "/images/No2_event/workshop/ガネーシャ_小森駿正.jpg", alt: "ガネーシャ_小森駿正" , caption: "ガネーシャ : 小森駿正" },
+                    { src: "/images/No2_event/workshop/シマエナガ_中川一政.jpg", alt: "シマエナガ_中川一政" , caption: "シマエナガ : 中川一政" },
                 ]}
             />
 
