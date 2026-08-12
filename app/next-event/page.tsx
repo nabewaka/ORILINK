@@ -74,6 +74,11 @@ export default function NextEventPage() {
                     { src: "/images/No2_event/workshop/プレゼントボックス_篠原隆士朗.jpg", alt: "プレゼントボックス_篠原隆士朗" , caption: "プレゼントボックス : 篠原隆士朗" },
                     { src: "/images/No2_event/workshop/ガネーシャ_小森駿正.jpg", alt: "ガネーシャ_小森駿正" , caption: "ガネーシャ : 小森駿正" },
                     { src: "/images/No2_event/workshop/シマエナガ_中川一政.jpg", alt: "シマエナガ_中川一政" , caption: "シマエナガ : 中川一政" },
+                    { src: "/images/No2_event/workshop/トリケラトプス_小尻てるや.jpg", alt: "トリケラトプス_小尻てるや" , caption: "トリケラトプス : 小尻てるや" },
+                    { src: "/images/No2_event/workshop/グランドピアノ_津村有.jpg", alt: "グランドピアノ_津村有" , caption: "グランドピアノ : 津村有" },
+                    { src: "/images/No2_event/workshop/ジェンツーペンギン_脇田慎平.jpg", alt: "ジェンツーペンギン_脇田慎平" , caption: "ジェンツーペンギン : 脇田慎平" },
+                    { src: "/images/No2_event/workshop/ペンギン_田村徳清.jpg", alt: "ペンギン_田村徳清" , caption: "ペンギン : 田村徳清" },
+                    { src: "/images/No2_event/workshop/ペンギン_林清人.jpg", alt: "ペンギン_林清人" , caption: "ペンギン : 林清人" },
                 ]}
             />
 
